@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TESLIM ADEKOYA'S PORTFOLIO</title>
+  <link rel="stylesheet" href="output.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body class="bg-black select-none max-w-[1440px] mx-auto">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black">
+      <div class="max-w-[1440px] mx-auto flex items-center justify-between py-8 px-4 sm:px-16">
+        <a href="./index.html" class="text-[18px] font-normal uppercase leading-[150%] text-white abeezee">
+          TESLIM ADEKOYA
+        </a>
+
+        <nav class="flex items-center space-x-6">
+<a id="worksLink" href="index.html#works" class="text-[18px] font-normal uppercase leading-[150%] text-white/60 hover:text-white abeezee max-sm:hidden transition-colors duration-300">
+  WORKS
+</a>
+
+<!-- CONTACT Dropdown -->
+<div x-data="{ open: false }" class="relative">
+  <button @click="open = !open"
+    class="group inline-flex items-center text-[18px] sm:text-[20px] font-semibold uppercase text-[#FE5F55] hover:text-white abeezee transition duration-200">
+    <span>GET IN TOUCH</span>
+    <i class="fas fa-comments ml-2 text-[16px] sm:text-[18px] text-[#FE5F55] group-hover:text-white transition duration-200"></i>
+  </button>
+
+  <!-- Dropdown -->
+  <div x-show="open" @click.away="open = false" x-transition
+    class="absolute right-0 mt-4 w-60 bg-[#121212] border border-white rounded-xl shadow-lg z-50 overflow-hidden">
+
+    <a href="https://www.linkedin.com/in/teslim-adekoya/" target="_blank"
+      class="flex items-center px-5 py-4 gap-4 text-white hover:bg-white/10  transition-all duration-150">
+      <i class="fab fa-linkedin-in text-white text-[20px]"></i>
+      <span class="text-[16px] sm:text-[18px]">LinkedIn</span>
+    </a>
+
+    <a href="mailto:teslimadekoya1995@gmail.com"
+      class="flex items-center px-5 py-4 gap-4 text-white hover:bg-white/10  transition-all duration-150">
+      <i class="fas fa-envelope text-white text-[20px]"></i>
+      <span class="text-[16px] sm:text-[18px]">Email</span>
+    </a>
+  </div>
+</div>
+
+        </nav>
+      </div>
+    </header>
+
+<!-- Hero Section -->
+<main class="mb-">
+  <div class="flex flex-col gap-[16px] text-center max-w-[800px] w-full mt-[116px] mx-auto">
+    <h1 class="text-white font-normal text-[80px] leading-[110%] abeezee uppercase max-xl:text-[64px] max-lg:text-[48px] max-md:text-[36px] max-sm:text-[28px]">
+      NORDWASH
+    </h1>
+    <p class="text-white/70 font-normal abeezee leading-[150%] text-[18px] max-md:text-[16px] max-sm:text-[14px]">
+      A Nigeria-based laundry application.
+    </p>
+  </div>
+
+
+  <!-- Role–Team Section -->
+<div class="px-[24px] mx-auto max-w-[1440px] mt-[96px] max-md:mt-[36px]">
+  <div class="grid grid-cols-5 gap-[24px] max-md:grid-cols-1 max-md:gap-[32px]">
+    <!-- Role -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">My Role</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">Product Designer</p>
+    </div>
+
+    <!-- Tools -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">Tools</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">Figma & Chat GPT</p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">Timeline</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">3 Weeks</p>
+    </div>
+
+    <!-- Work Done -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">Tasks</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">Design & Research</p>
+    </div>
+
+    <!-- Team -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">Team</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">None</p>
+    </div>
+  </div>
+</div>
+
+<section class="mt-[80px] mb-[88px] px-4 sm:px-16 text-white abeezee flex flex-col gap-[64px] mx-auto">
+
+  <!-- Problems Section -->
+  <div>
+    <h2 class="text-[40px] font-normal leading-[130%] mb-[24px] max-md:text-[28px]">The Problems</h2>
+    <ol class="list-decimal list-inside text-white/70 space-y-[16px] text-[20px] leading-[150%] max-md:text-[17px]">
+      <li>Laundry services often lack transparency and convenience, hurting user experience and retention.</li>
+      <li>Clothes are sometimes returned damaged due to poor handling.</li>
+      <li>Pricing isn't clearly communicated upfront.</li>
+      <li>Users don’t get real-time updates on laundry progress or delivery.</li>
+      <li>There’s no flexibility in how fast or what type of service users can select.</li>
+      <li>There’s no history of past orders or a way to give real-time feedback or ratings.</li>
+    </ol>
+  </div>
+
+  <!-- Solutions Section -->
+  <div>
+    <h2 class="text-[40px] font-normal leading-[130%] mb-[24px] max-md:text-[28px]">How I Solved Them</h2>
+    <ol class="list-decimal list-inside text-white/70 space-y-[16px] text-[20px] leading-[150%] max-md:text-[17px]">
+      <li>Built a user-friendly laundry app focused on transparency and convenience to improve overall satisfaction.</li>
+      <li>Enabled users to upload clothing photos and add special instructions for personalized, damage-free handling.</li>
+      <li>Added a clear, upfront price summary before users proceed to payment.</li>
+      <li>Integrated real-time updates and a progress bar so users can track their laundry at every step.</li>
+      <li>Offered flexible service options, including standard and express delivery to suit different schedules.</li>
+      <li>Implemented order history, spending summaries, and service rating tools for transparency and user feedback.</li>
+    </ol>
+  </div>
+
+</section>
+
+<section class="px-4 sm:px-16" x-data="{ isOpen: false, imageUrl: '' }">
+  <div class="flex flex-col gap-[88px] mb-[48px] max-md:gap-[32px]">
+    <img src="/images/A1.webp" alt="A1" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A1.webp'">
+    <img src="/images/A2.webp" alt="A2" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A2.webp'">
+    <img src="/images/A3.webp" alt="A3" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A3.webp'">
+    <img src="/images/A4.webp" alt="A4" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A4.webp'">
+    <img src="/images/A5.webp" alt="A5" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A5.webp'">
+  </div>
+
+  <!-- Fullscreen Modal -->
+  <div 
+    x-show="isOpen"
+    x-transition
+    @keydown.escape.window="isOpen = false"
+    class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
+    style="display: none;"
+  >
+    <!-- Close Button -->
+    <button 
+      @click="isOpen = false"
+      class="absolute top-6 right-6 text-red-500 text-[44px] hover:text-[#FE5F55] transition"
+      aria-label="Close"
+    >
+      <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Enlarged Image -->
+    <img :src="imageUrl" alt="Preview" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl">
+  </div>
+
+  <!-- Back to previous page -->
+  <div class="text-center mb-[176px]">
+    <a href="index.html#works" class="text-[18px] font-normal text-white/60 hover:text-white abeezee uppercase leading-[150%]">
+      Back to previous page
+    </a>
+  </div>
+</section>
+
+
+
+<section class="mx-[16px] sm:mx-[64px] mt-[96px] sm:mt-[218px] mb-[96px] sm:mb-[118px]">
+  <div x-data="{ open: false }" class="flex flex-col items-center text-center relative group">
+    
+    <!-- Button -->
+    <button 
+      @click="open = !open"
+      class="flex flex-wrap justify-center items-center gap-4 text-[#FE5F55] group-hover:text-white uppercase custom-font leading-[110%] transition-colors duration-300 
+             text-[28px] sm:text-[40px] md:text-[60px] lg:text-[72px] xl:text-[80px] 2xl:text-[96px]"
+      aria-label="Get in touch with Teslim Adekoya"
+    >
+      GET IN TOUCH
+    </button>
+
+    <!-- Dropdown Menu -->
+    <div 
+      x-show="open" 
+      @click.away="open = false" 
+      x-transition
+      class="absolute top-full mt-4 w-[260px] bg-black text-white rounded-xl border border-white shadow-lg z-50 overflow-hidden"
+    >
+      <a 
+        href="https://www.linkedin.com/in/teslimadekoya" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="flex items-center px-5 py-4 gap-3 hover:bg-white/10 transition-all duration-150"
+      >
+        <i class="fab fa-linkedin-in text-[18px]"></i>
+        <span class="text-[15px] sm:text-[16px]">LinkedIn</span>
+      </a>
+
+      <a 
+        href="mailto:teslimadekoya1995@gmail.com"
+        class="flex items-center px-5 py-4 gap-3 hover:bg-white/10 transition-all duration-150"
+      >
+        <i class="fas fa-envelope text-[18px]"></i>
+        <span class="text-[15px] sm:text-[16px]">Email</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+</main>
+
+
+
+    
+<footer class="bg-black text-white">
+  <div class="max-w-[1440px] mx-auto px-6 sm:px-16 py-12 flex flex-col items-center gap-8">
+
+    <!-- Name / Signature -->
+    <h2 class="text-[16px] sm:text-[18px] font-normal abeezee uppercase tracking-widest text-center">
+      Teslim Adekoya Portfolio
+    </h2>
+
+    <!-- Links (Icons with labels) -->
+    <div class="flex gap-6 sm:gap-10 items-center justify-center">
+      <!-- Resume -->
+      <a href="/images/CV.pdf" target="_blank" rel="noopener noreferrer"
+         class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
+        <i class="fas fa-file-alt text-[20px] sm:text-[24px]"></i>
+        <span class="text-[12px] sm:text-[14px] uppercase abeezee">Resumé</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/teslim-adekoya/" target="_blank" rel="noopener noreferrer"
+         class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
+        <i class="fab fa-linkedin-in text-[20px] sm:text-[24px]"></i>
+        <span class="text-[12px] sm:text-[14px] uppercase abeezee">LinkedIn</span>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:teslimadekoya1995@gmail.com"
+         class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
+        <i class="fas fa-envelope text-[20px] sm:text-[24px]"></i>
+        <span class="text-[12px] sm:text-[14px] uppercase abeezee">Email</span>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-white/50 text-[12px] sm:text-[14px] font-light tracking-wide text-center mt-4">
+      © <script>document.write(new Date().getFullYear());</script> Teslim Adekoya. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+
+
+  
+
+
+
+</body>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</html>
