@@ -3,13 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TESLIM ADEKOYA'S PORTFOLIO</title>
+  <title>Nordwash Case Study | Teslim Adekoya Portfolio</title>
+  <meta name="description" content="Case study: Nordwash, a Nigeria-based laundry application. Designed by Teslim Adekoya, focused on transparency, convenience, and user-centered solutions." />
+  <meta name="keywords" content="Nordwash, laundry app, case study, Teslim Adekoya, product designer, UX, UI, Nigeria, digital design" />
+  <meta name="author" content="Teslim Adekoya" />
+  <link rel="canonical" href="https://complete-northcafe-dm75.vercel.app/" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Nordwash Case Study | Teslim Adekoya Portfolio" />
+  <meta property="og:description" content="Case study: Nordwash, a Nigeria-based laundry application. Designed by Teslim Adekoya, focused on transparency, convenience, and user-centered solutions." />
+  <meta property="og:image" content="https://complete-northcafe-dm75.vercel.app/images/nordwash-og.jpg" />
+  <meta property="og:url" content="https://complete-northcafe-dm75.vercel.app/" />
+  <meta property="og:type" content="article" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nordwash Case Study | Teslim Adekoya Portfolio" />
+  <meta name="twitter:description" content="Case study: Nordwash, a Nigeria-based laundry application. Designed by Teslim Adekoya, focused on transparency, convenience, and user-centered solutions." />
+  <meta name="twitter:image" content="https://complete-northcafe-dm75.vercel.app/images/nordwash-og.jpg" />
+  <link rel="icon" href="/images/favicon.svg" type="image/x-icon" />
   <link rel="stylesheet" href="output.css" />
   <style>
     @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
   </style>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Nordwash Case Study",
+    "author": {
+      "@type": "Person",
+      "name": "Teslim Adekoya"
+    },
+    "url": "https://complete-northcafe-dm75.vercel.app/",
+    "image": "https://complete-northcafe-dm75.vercel.app/images/nordwash-og.jpg",
+    "description": "Case study: Nordwash, a Nigeria-based laundry application. Designed by Teslim Adekoya, focused on transparency, convenience, and user-centered solutions."
+  }
+  </script>
 </head>
 
 <body class="bg-black select-none max-w-[1440px] mx-auto">
@@ -112,9 +142,9 @@
       <li>Laundry services often lack transparency and convenience, hurting user experience and retention.</li>
       <li>Clothes are sometimes returned damaged due to poor handling.</li>
       <li>Pricing isn't clearly communicated upfront.</li>
-      <li>Users don’t get real-time updates on laundry progress or delivery.</li>
-      <li>There’s no flexibility in how fast or what type of service users can select.</li>
-      <li>There’s no history of past orders or a way to give real-time feedback or ratings.</li>
+      <li>Users don't get real-time updates on laundry progress or delivery.</li>
+      <li>There's no flexibility in how fast or what type of service users can select.</li>
+      <li>There's no history of past orders or a way to give real-time feedback or ratings.</li>
     </ol>
   </div>
 
@@ -133,41 +163,13 @@
 
 </section>
 
-<section class="px-4 sm:px-16" x-data="{ isOpen: false, imageUrl: '' }">
+<section class="px-4 sm:px-16">
   <div class="flex flex-col gap-[88px] mb-[48px] max-md:gap-[32px]">
-    <img src="/images/A1.webp" alt="A1" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A1.webp'">
-    <img src="/images/A2.webp" alt="A2" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A2.webp'">
-    <img src="/images/A3.webp" alt="A3" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A3.webp'">
-    <img src="/images/A4.webp" alt="A4" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A4.webp'">
-    <img src="/images/A5.webp" alt="A5" class="w-full h-full object-cover cursor-pointer" @click="isOpen = true; imageUrl = '/images/A5.webp'">
-  </div>
-
-  <!-- Fullscreen Modal -->
-  <div 
-    x-show="isOpen"
-    x-transition
-    @keydown.escape.window="isOpen = false"
-    class="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-4"
-    style="display: none;"
-  >
-    <!-- Close Button -->
-    <button 
-      @click="isOpen = false"
-      class="absolute top-6 right-6 text-red-500 text-[44px] hover:text-[#FE5F55] transition"
-      aria-label="Close"
-    >
-      <i class="fas fa-times"></i>
-    </button>
-
-    <!-- Enlarged Image -->
-    <img :src="imageUrl" alt="Preview" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl">
-  </div>
-
-  <!-- Back to previous page -->
-  <div class="text-center mb-[176px]">
-    <a href="index.html#works" class="text-[18px] font-normal text-white/60 hover:text-white abeezee uppercase leading-[150%]">
-      Back to previous page
-    </a>
+    <img src="/images/nordwash_img_1.webp" alt="Nordwash app screen 1" class="w-full h-full object-cover cursor-pointer">
+    <img src="/images/nordwash_img_2.webp" alt="Nordwash app screen 2" class="w-full h-full object-cover cursor-pointer">
+    <img src="/images/nordwash_img_3.webp" alt="Nordwash app screen 3" class="w-full h-full object-cover cursor-pointer">
+    <img src="/images/nordwash_img_4.webp" alt="Nordwash app screen 4" class="w-full h-full object-cover cursor-pointer">
+    <img src="/images/nordwash_img_5.webp" alt="Nordwash app screen 5" class="w-full h-full object-cover cursor-pointer">
   </div>
 </section>
 
