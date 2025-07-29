@@ -299,12 +299,6 @@
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
-  .h-\[200px\] {
-    height: 200px;
-  }
-  .h-\[400px\] {
-    height: 400px;
-  }
   .h-auto {
     height: auto;
   }
@@ -745,11 +739,6 @@
   .max-md\:mt-\[36px\] {
     @media (width < 48rem) {
       margin-top: 36px;
-    }
-  }
-  .max-md\:h-\[300px\] {
-    @media (width < 48rem) {
-      height: 300px;
     }
   }
   .max-md\:grid-cols-1 {
