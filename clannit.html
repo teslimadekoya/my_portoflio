@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nordwash Case Study | Teslim Adekoya Portfolio</title>
+  <meta name="description" content="Case study: Nordwash, a Nigeria-based laundry application. Designed by Teslim Adekoya, focused on transparency, convenience, and user-centered solutions." />
+  <meta name="keywords" content="Nordwash, laundry app, case study, Teslim Adekoya, product designer, UX, UI, Nigeria, digital design" />
+  <meta name="author" content="Teslim Adekoya" />
+  <link rel="canonical" href="https://complete-northcafe-dm75.vercel.app/" />
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Nordwash Case Study | Teslim Adekoya Portfolio" />
+  <meta property="og:description" content="Case study: Nordwash, a Nigeria-based laundry application. Designed by Teslim Adekoya, focused on transparency, convenience, and user-centered solutions." />
+  <meta property="og:image" content="https://complete-northcafe-dm75.vercel.app/images/nordwash-og.jpg" />
+  <meta property="og:url" content="https://complete-northcafe-dm75.vercel.app/" />
+  <meta property="og:type" content="article" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nordwash Case Study | Teslim Adekoya Portfolio" />
+  <meta name="twitter:description" content="Case study: Nordwash, a Nigeria-based laundry application. Designed by Teslim Adekoya, focused on transparency, convenience, and user-centered solutions." />
+  <meta name="twitter:image" content="https://complete-northcafe-dm75.vercel.app/images/nordwash-og.jpg" />
+  <link rel="icon" href="/images/favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="output.css" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CreativeWork",
+    "name": "Nordwash Case Study",
+    "author": {
+      "@type": "Person",
+      "name": "Teslim Adekoya"
+    },
+    "url": "https://complete-northcafe-dm75.vercel.app/",
+    "image": "https://complete-northcafe-dm75.vercel.app/images/nordwash-og.jpg",
+    "description": "Case study: Nordwash, a Nigeria-based laundry application. Designed by Teslim Adekoya, focused on transparency, convenience, and user-centered solutions."
+  }
+  </script>
+</head>
+
+<body class="bg-black select-none max-w-[1440px] mx-auto">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-black">
+      <div class="max-w-[1440px] mx-auto flex items-center justify-between py-8 px-4 sm:px-16">
+        <a href="./index.html" class="text-[18px] font-normal uppercase leading-[150%] text-white abeezee">
+          TESLIM ADEKOYA
+        </a>
+
+        <nav class="flex items-center space-x-6">
+<a id="worksLink" href="index.html#works" class="text-[18px] font-normal uppercase leading-[150%] text-white/60 hover:text-white abeezee max-sm:hidden transition-colors duration-300">
+  WORKS
+</a>
+
+<!-- CONTACT Dropdown -->
+<div x-data="{ open: false }" class="relative">
+  <button @click="open = !open"
+    class="group inline-flex items-center text-[18px] sm:text-[20px] font-semibold uppercase text-[#FE5F55] hover:text-white abeezee transition duration-200">
+    <span>GET IN TOUCH</span>
+    <i class="fas fa-comments ml-2 text-[16px] sm:text-[18px] text-[#FE5F55] group-hover:text-white transition duration-200"></i>
+  </button>
+
+  <!-- Dropdown -->
+  <div x-show="open" @click.away="open = false" x-transition
+    class="absolute right-0 mt-4 w-60 bg-[#121212] border border-white rounded-xl shadow-lg z-50 overflow-hidden">
+
+    <a href="https://www.linkedin.com/in/teslim-adekoya/" target="_blank"
+      class="flex items-center px-5 py-4 gap-4 text-white hover:bg-white/10  transition-all duration-150">
+      <i class="fab fa-linkedin-in text-white text-[20px]"></i>
+      <span class="text-[16px] sm:text-[18px]">LinkedIn</span>
+    </a>
+
+    <a href="mailto:teslimadekoya1995@gmail.com"
+      class="flex items-center px-5 py-4 gap-4 text-white hover:bg-white/10  transition-all duration-150">
+      <i class="fas fa-envelope text-white text-[20px]"></i>
+      <span class="text-[16px] sm:text-[18px]">Email</span>
+    </a>
+  </div>
+</div>
+
+        </nav>
+      </div>
+    </header>
+
+<!-- Hero Section -->
+<main class="mb-">
+  <div class="flex flex-col gap-[16px] text-center max-w-[800px] w-full mt-[116px] mx-auto">
+    <h1 class="text-white font-normal text-[80px] leading-[110%] abeezee uppercase max-xl:text-[64px] max-lg:text-[48px] max-md:text-[36px] max-sm:text-[28px]">
+      Clannit
+    </h1>
+    <p class="text-white/70 font-normal abeezee leading-[150%] text-[18px] max-md:text-[16px] max-sm:text-[14px]">
+    A Nigeria-based community and estate security application.
+    </p>
+  </div>
+
+
+  <!-- Role–Team Section -->
+<div class="px-[24px] mx-auto max-w-[1440px] mt-[96px] max-md:mt-[36px]">
+  <div class="grid grid-cols-5 gap-[24px] max-md:grid-cols-1 max-md:gap-[32px]">
+    <!-- Role -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">My Role</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">Product Designer</p>
+    </div>
+
+    <!-- Tools -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">Tools</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">Figma</p>
+    </div>
+
+    <!-- Timeline -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">Timeline</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">1 Week</p>
+    </div>
+
+    <!-- Work Done -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">Tasks</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">Design</p>
+    </div>
+
+    <!-- Team -->
+    <div class="flex flex-col gap-[8px] text-center">
+      <h2 class="text-white font-normal text-[32px] leading-[130%] custom-font max-lg:text-[28px]">Team</h2>
+      <p class="text-white/70 custom-font font-normal leading-[150%] text-[18px] max-lg:text-[14px]">None</p>
+    </div>
+  </div>
+</div>
+
+<section class="mt-[80px] mb-[88px] px-4 sm:px-16 text-white abeezee flex flex-col gap-[64px] mx-auto">
+
+  <!-- About Section -->
+  <div>
+    <h2 class="text-[40px] font-normal leading-[130%] mb-[24px] max-md:text-[28px]">🔒 Designing for Safer Communities: Clannit App Redesign</h2>
+    <p class="text-white/70 text-[20px] leading-[150%] max-md:text-[17px]">
+        Clannit is a Nigerian app focused on estate and community security, a delicate and essential mission. While the functionality of the app serves its purpose, the existing design feels outdated and lacks the emotional connection required for a product that handles something as critical as safety and trust. My goal with this redesign was to create a cleaner and more modern interface that balances usability and emotional resonance, while amplifying the sense of security Clannit is meant to provide.  
+    </div>
+    <div>
+    <p class="text-white/70 text-[20px] leading-[150%] max-md:text-[17px]">
+        The first screen I redesigned was the onboarding. The current onboarding flow lacks personality, which is an important aspect for an app that deals with protecting families and communities. I opted for a simpler, cleaner design that still drives an emotional connection. The screen features an image of two children together, a visual that instantly evokes care and protection, paired with the caption “Safety and love, all in one place.” To ensure usability, I included a skip button, a progress indicator, and a next button to guide the user seamlessly through the flow. The overall tone is simple and elegant, yet it immediately communicates the app’s purpose and values.
+  </div>
+    <img src="/images/clannit_img_1.webp" alt="Clannit app screen 1" class="w-full h-full object-cover cursor-pointer">
+    <div>
+    <p class="text-white/70 text-[20px] leading-[150%] max-md:text-[17px]">
+For the login screen, the current version displays the Clannit icon, a “Welcome back” text, unlabeled text fields, a contact support button, and the app version number. In my redesign, I replaced the “Welcome back” text with a clear “Log In” label so that users instantly understand the page’s function. I also introduced a darker shade of Clannit’s green to create better contrast against the clean white background, giving the screen a sharper and more polished look. Labels were added to the input fields for clarity, and I changed the “Forgot password” link to green, aligning it to the left instead of the center so it remains visible without distracting from the primary login action. The result is a minimal and functional login screen that prioritizes clarity and ease of use.
+  </div>
+    <img src="images/clannit_img_2.webp" alt="Clannit app screen 2" class="w-full h-full object-cover cursor-pointer">
+    <div>
+    <p class="text-white/70 text-[20px] leading-[150%] max-md:text-[17px]">
+The feed screen also required significant refinement. The existing design uses unfamiliar icons, a floating add-post button, a hamburger menu, and a pill-style selector to navigate between pages. I replaced the navbar icons with more universally recognizable ones, changing the Guests icon to multiple people, the Feed icon to a gallery, and the Invoice icon to a document instead of a credit card. The add-post button was moved from a floating position to the navbar for a cleaner layout. I removed the hamburger menu and the contact support button, moving their contents to a new “More” section in the navbar, which now contains five items. To personalize the experience, I added the user’s image, name, and a “Welcome back” message at the top of the feed. The darker Clannit green I introduced in the login screen carries over here as the header background, giving the app a more consistent and professional look. Instead of the pill-style navigation, I used tabs, a more standard and familiar UX pattern. I also removed the search bar for a less cluttered interface and designed the feed to feel similar to Instagram since the features are quite close. This makes the screen intuitive and instantly familiar to most users.
+  </div>
+      <img src="images/clannit_img_3.webp" alt="Clannit app screen 3" class="w-full h-full object-cover cursor-pointer">
+    <div>
+    <p class="text-white/70 text-[20px] leading-[150%] max-md:text-[17px]">
+The guest page needed better contrast and usability. In the original design, the Invite Guest and Track Guest tabs used a green stroke on a green background, which made them blend in and difficult to distinguish. I redesigned the tabs with a dark green stroke on a white background to create clear separation and hierarchy. In the original version, the selection between One-Time Guest and Multi-Entry Guest was done using two circular radio buttons, one greyed out for “One Time Guest” and the other filled green for “Multi-Entry Guest,” as seen in the screenshot above. I replaced this with a dropdown menu to switch between the two options, which saves space and makes the interaction feel cleaner. To improve accessibility and usability across the app, I also increased the size of all buttons to create more comfortable touch targets.
+  </div>
+<img src="images/clannit_img_4.webp" alt="Clannit app screen 3" class="w-full h-full object-cover cursor-pointer">
+    <div>
+    <p class="text-white/70 text-[20px] leading-[150%] max-md:text-[17px]">
+Throughout the redesign, my focus was on creating an interface that feels modern, emotionally engaging, and user-first. By introducing familiar icons, clear labels, and intuitive navigation, I wanted to reduce friction for users while strengthening the app’s brand. The use of a darker shade of green across the screens helps establish trust and gives the app a more polished and professional identity. Ultimately, the redesign balances functionality with emotion, aligning the interface with Clannit’s mission to protect communities and foster trust.
+  </div>
+
+    
+
+</section>
+
+<section class="mx-[16px] sm:mx-[64px] mt-[96px] sm:mt-[218px] mb-[96px] sm:mb-[118px]">
+  <div x-data="{ open: false }" class="flex flex-col items-center text-center relative group">
+    
+    <!-- Button -->
+    <button 
+      @click="open = !open"
+      class="flex flex-wrap justify-center items-center gap-4 text-[#FE5F55] group-hover:text-white uppercase custom-font leading-[110%] transition-colors duration-300 
+             text-[28px] sm:text-[40px] md:text-[60px] lg:text-[72px] xl:text-[80px] 2xl:text-[96px]"
+      aria-label="Get in touch with Teslim Adekoya"
+    >
+      GET IN TOUCH
+    </button>
+
+    <!-- Dropdown Menu -->
+    <div 
+      x-show="open" 
+      @click.away="open = false" 
+      x-transition
+      class="absolute top-full mt-4 w-[260px] bg-black text-white rounded-xl border border-white shadow-lg z-50 overflow-hidden"
+    >
+      <a 
+        href="https://www.linkedin.com/in/teslimadekoya" 
+        target="_blank" 
+        rel="noopener noreferrer"
+        class="flex items-center px-5 py-4 gap-3 hover:bg-white/10 transition-all duration-150"
+      >
+        <i class="fab fa-linkedin-in text-[18px]"></i>
+        <span class="text-[15px] sm:text-[16px]">LinkedIn</span>
+      </a>
+
+      <a 
+        href="mailto:teslimadekoya1995@gmail.com"
+        class="flex items-center px-5 py-4 gap-3 hover:bg-white/10 transition-all duration-150"
+      >
+        <i class="fas fa-envelope text-[18px]"></i>
+        <span class="text-[15px] sm:text-[16px]">Email</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="bg-black text-white">
+  <div class="max-w-[1440px] mx-auto px-6 sm:px-16 py-12 flex flex-col items-center gap-8">
+
+    <!-- Name / Signature -->
+    <h2 class="text-[16px] sm:text-[18px] font-normal abeezee uppercase tracking-widest text-center">
+      Teslim Adekoya Portfolio
+    </h2>
+
+    <!-- Links (Icons with labels) -->
+    <div class="flex gap-6 sm:gap-10 items-center justify-center">
+      <!-- Resume -->
+      <a href="/images/Teslim Adekoya - Product Designer.pdf" target="_blank" rel="noopener noreferrer"
+         class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
+        <i class="fas fa-file-alt text-[20px] sm:text-[24px]"></i>
+        <span class="text-[12px] sm:text-[14px] uppercase abeezee">Resumé</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/teslim-adekoya/" target="_blank" rel="noopener noreferrer"
+         class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
+        <i class="fab fa-linkedin-in text-[20px] sm:text-[24px]"></i>
+        <span class="text-[12px] sm:text-[14px] uppercase abeezee">LinkedIn</span>
+      </a>
+
+      <!-- Email -->
+      <a href="mailto:teslimadekoya1995@gmail.com"
+         class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
+        <i class="fas fa-envelope text-[20px] sm:text-[24px]"></i>
+        <span class="text-[12px] sm:text-[14px] uppercase abeezee">Email</span>
+      </a>
+    </div>
+
+    <!-- Copyright -->
+    <p class="text-white/50 text-[12px] sm:text-[14px] font-light tracking-wide text-center mt-4">
+      © <script>document.write(new Date().getFullYear());</script> Teslim Adekoya. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+</body>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+</html>
