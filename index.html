@@ -8,41 +8,54 @@
   <meta name="keywords" content="Teslim Adekoya, product designer, UX, UI, portfolio, case studies, digital design, user experience, user interface, Lagos, Nigeria" />
   <meta name="author" content="Teslim Adekoya" />
   <link rel="canonical" href="https://teslimadekoya.vercel.app/index.html" />
+  
   <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Teslim Adekoya | Product Designer Portfolio" />
   <meta property="og:description" content="Empathy-driven product designer creating seamless, user-centered digital experiences. View works, case studies, and get in touch." />
   <meta property="og:image" content="https://teslimadekoya.vercel.app/images/og-image.jpg" />
   <meta property="og:url" content="https://teslimadekoya.vercel.app/index.html" />
   <meta property="og:type" content="website" />
+  
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Teslim Adekoya | Product Designer Portfolio" />
   <meta name="twitter:description" content="Empathy-driven product designer creating seamless, user-centered digital experiences. View works, case studies, and get in touch." />
   <meta name="twitter:image" content="https://teslimadekoya.vercel.app/images/og-image.jpg" />
+  
+  <!-- Favicon -->
   <link rel="icon" href="/images/favicon.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="output.css" />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-  </style>
+  
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
+  
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="output.css" />
+  
+  <!-- AlpineJS -->
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  
+  <!-- Schema.org -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Teslim Adekoya",
-  "url": "https://teslimadekoya.vercel.app/index.html",
-  "image": "https://teslimadekoya.vercel.app/images/og-image.jpg",
-  "sameAs": [
-    "https://www.linkedin.com/in/teslim-adekoya/"
-  ],
-  "jobTitle": "Product Designer",
-  "description": "Empathy-driven product designer creating seamless, user-centered digital experiences.",
-  "email": "mailto:teslimadekoya1995@gmail.com"
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Teslim Adekoya",
+    "url": "https://teslimadekoya.vercel.app/index.html",
+    "image": "https://teslimadekoya.vercel.app/images/og-image.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/in/teslim-adekoya/"
+    ],
+    "jobTitle": "Product Designer",
+    "description": "An empathy-driven designer who builds with precision and crafts user-centered experiences through design, code, AI, and Framer.",
+    "email": "mailto:teslimadekoya1995@gmail.com"
+  }
+  </script>
 </head>
-<body class="bg-black select-none">
+
+<body class="bg-black select-none font-abeezee">
 
   <!-- Page Wrapper -->
   <div class="max-w-[1440px] mx-auto">
@@ -50,41 +63,31 @@
     <!-- Header -->
     <header class="fixed top-0 left-0 right-0 z-50 bg-black">
       <div class="max-w-[1440px] mx-auto flex items-center justify-between py-8 px-4 sm:px-16">
-        <a href="./index.html" class="text-[18px] font-normal uppercase leading-[150%] text-white abeezee">
+        <a href="./index.html" class="text-[18px] font-medium uppercase leading-[150%] text-white">
           TESLIM ADEKOYA
         </a>
 
         <nav class="flex items-center space-x-6">
-        <a id="worksLink" href="#works" class="text-[18px] font-normal uppercase leading-[150%] text-white/60 hover:text-white abeezee max-sm:hidden transition-colors duration-300">
-            WORKS
-          </a>
 
-<!-- CONTACT Dropdown -->
-<div x-data="{ open: false }" class="relative">
-  <button @click="open = !open"
-    class="group inline-flex items-center text-[18px] sm:text-[20px] font-semibold uppercase text-[#FE5F55] hover:text-white abeezee transition duration-200">
-    <span>GET IN TOUCH</span>
-    <i class="fas fa-comments ml-2 text-[16px] sm:text-[18px] text-[#FE5F55] group-hover:text-white transition duration-200"></i>
-  </button>
+          <!-- Contact Dropdown -->
+          <div x-data="{ open: false }" class="relative">
+            <button @click="open = !open" class="group inline-flex items-center text-[18px] sm:text-[20px] font-semibold uppercase text-[#FE5F55] hover:text-white transition duration-200">
+              GET IN TOUCH
+              <i class="fas fa-comments ml-2 text-[16px] sm:text-[18px] text-[#FE5F55] group-hover:text-white transition duration-200"></i>
+            </button>
 
-  <!-- Dropdown -->
-  <div x-show="open" @click.away="open = false" x-transition
-    class="absolute right-0 mt-4 w-60 bg-[#121212] border border-white rounded-xl shadow-lg z-50 overflow-hidden">
-
-    <a href="https://www.linkedin.com/in/teslim-adekoya/" target="_blank"
-      class="flex items-center px-5 py-4 gap-4 text-white hover:bg-white/10  transition-all duration-150">
-      <i class="fab fa-linkedin-in text-white text-[20px]"></i>
-      <span class="text-[16px] sm:text-[18px]">LinkedIn</span>
-    </a>
-
-    <a href="mailto:teslimadekoya1995@gmail.com"
-      class="flex items-center px-5 py-4 gap-4 text-white hover:bg-white/10  transition-all duration-150">
-      <i class="fas fa-envelope text-white text-[20px]"></i>
-      <span class="text-[16px] sm:text-[18px]">Email</span>
-    </a>
-  </div>
-</div>
-
+            <!-- Dropdown -->
+            <div x-show="open" @click.away="open = false" x-transition class="absolute right-0 mt-4 w-60 bg-[#121212] border border-white rounded-xl shadow-lg z-50 overflow-hidden">
+              <a href="https://www.linkedin.com/in/teslim-adekoya/" target="_blank" class="flex items-center px-5 py-4 gap-4 text-white hover:bg-white/10 transition-all duration-150">
+                <i class="fab fa-linkedin-in text-white text-[20px]"></i>
+                <span class="text-[16px] sm:text-[18px]">LinkedIn</span>
+              </a>
+              <a href="mailto:teslimadekoya1995@gmail.com" class="flex items-center px-5 py-4 gap-4 text-white hover:bg-white/10 transition-all duration-150">
+                <i class="fas fa-envelope text-white text-[20px]"></i>
+                <span class="text-[16px] sm:text-[18px]">Email</span>
+              </a>
+            </div>
+          </div>
         </nav>
       </div>
     </header>
@@ -92,205 +95,168 @@
     <!-- Hero Section -->
     <section class="flex items-center justify-center min-h-screen px-6 pt-[112px] sm:pt-[128px]">
       <div class="flex flex-col items-center text-center gap-4">
-        <h1 class="text-white font-normal abeezee leading-[110%] uppercase text-[56px] sm:text-[72px] xl:text-[120px]">
+        <h1 class="text-white font-normal leading-[110%] uppercase text-[56px] sm:text-[72px] xl:text-[120px]">
           Teslim<br>Adekoya
         </h1>
-        <p class="text-white/70 font-normal abeezee leading-[160%] text-[14px] sm:text-[16px] xl:text-[18px] max-w-[90%] sm:max-w-[640px]">
-          An empathy-driven product designer who creates seamless,<br class="hidden sm:inline"> user-centered experiences.
-        </p>
+<p class="text-white/70 font-normal leading-[160%] text-[14px] sm:text-[16px] xl:text-[18px] max-w-[90%] sm:max-w-[640px]">
+  An empathy-driven designer who builds with precision and crafts user-centered experiences through design, code, AI, and Framer.
+  <br class="hidden sm:inline">
+</p>
       </div>
     </section>
 
     <!-- Works Section -->
-<section id="works" class="mx-[64px] max-sm:mx-[16px] pb-[100px]">
+    <section id="works" class="mx-[64px] max-sm:mx-[16px] pb-[100px]">
       <div class="flex gap-[8px] items-center mb-[44px] max-sm:mb-[24px]">
         <span class="inline-block h-3 w-3 bg-[#FE5F55]"></span>
-        <h2 class="text-[18px] font-normal text-white abeezee leading-[150%]">WORKS</h2>
+        <h2 class="text-[18px] font-normal text-white leading-[150%]">WORKS</h2>
       </div>
 
       <!-- Dynamic Work Cards -->
-      <div id="works-container" class="space-y-[64px]"></div>
-</section>
+      <div id="works-container" class="space-y-[32px]"></div>
+    </section>
 
+    <!-- Get in Touch Section -->
+    <section class="mx-[16px] sm:mx-[64px] mt-[96px] sm:mt-[218px] mb-[96px] sm:mb-[118px]">
+      <div x-data="{ open: false }" class="flex flex-col items-center text-center relative group">
+        
+        <!-- Button -->
+        <button @click="open = !open" class="flex flex-wrap justify-center items-center gap-4 text-[#FE5F55] group-hover:text-white uppercase leading-[110%] transition-colors duration-300 text-[28px] sm:text-[40px] md:text-[60px] lg:text-[72px] xl:text-[80px] 2xl:text-[96px]" aria-label="Get in touch with Teslim Adekoya">
+          GET IN TOUCH
+        </button>
 
+        <!-- Dropdown Menu -->
+        <div x-show="open" @click.away="open = false" x-transition class="absolute top-full mt-4 w-[260px] bg-black text-white rounded-xl border border-white shadow-lg z-50 overflow-hidden">
+          <a href="https://www.linkedin.com/in/teslim-adekoya/" target="_blank" rel="noopener noreferrer" class="flex items-center px-5 py-4 gap-3 hover:bg-white/10 transition-all duration-150">
+            <i class="fab fa-linkedin-in text-[18px]"></i>
+            <span class="text-[15px] sm:text-[16px]">LinkedIn</span>
+          </a>
+          <a href="mailto:teslimadekoya1995@gmail.com" class="flex items-center px-5 py-4 gap-3 hover:bg-white/10 transition-all duration-150">
+            <i class="fas fa-envelope text-[18px]"></i>
+            <span class="text-[15px] sm:text-[16px]">Email</span>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<section class="mx-[16px] sm:mx-[64px] mt-[96px] sm:mt-[218px] mb-[96px] sm:mb-[118px]">
-  <div x-data="{ open: false }" class="flex flex-col items-center text-center relative group">
-    
-    <!-- Button -->
-    <button 
-      @click="open = !open"
-      class="flex flex-wrap justify-center items-center gap-4 text-[#FE5F55] group-hover:text-white uppercase custom-font leading-[110%] transition-colors duration-300 
-             text-[28px] sm:text-[40px] md:text-[60px] lg:text-[72px] xl:text-[80px] 2xl:text-[96px]"
-      aria-label="Get in touch with Teslim Adekoya"
-    >
-      GET IN TOUCH
-    </button>
+    <!-- Footer -->
+    <footer class="bg-black text-white">
+      <div class="max-w-[1440px] mx-auto px-6 sm:px-16 py-12 flex flex-col items-center gap-8">
+        <!-- Name / Signature -->
+        <h2 class="text-[16px] sm:text-[18px] font-normal uppercase tracking-widest text-center">
+          Teslim Adekoya Portfolio
+        </h2>
 
-    <!-- Dropdown Menu -->
-    <div 
-      x-show="open" 
-      @click.away="open = false" 
-      x-transition
-      class="absolute top-full mt-4 w-[260px] bg-black text-white rounded-xl border border-white shadow-lg z-50 overflow-hidden"
-    >
-      <a 
-        href="https://www.linkedin.com/in/teslimadekoya" 
-        target="_blank" 
-        rel="noopener noreferrer"
-        class="flex items-center px-5 py-4 gap-3 hover:bg-white/10 transition-all duration-150"
-      >
-        <i class="fab fa-linkedin-in text-[18px]"></i>
-        <span class="text-[15px] sm:text-[16px]">LinkedIn</span>
-      </a>
+        <!-- Links (Icons with labels) -->
+        <div class="flex gap-6 sm:gap-10 items-center justify-center">
+          <!-- Resume -->
+          <a href="/images/Teslim_Adekoya_CV.pdf" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
+            <i class="fas fa-file-alt text-[20px] sm:text-[24px]"></i>
+            <span class="text-[12px] sm:text-[14px] uppercase">Resumé</span>
+          </a>
 
-      <a 
-        href="mailto:teslimadekoya1995@gmail.com"
-        class="flex items-center px-5 py-4 gap-3 hover:bg-white/10 transition-all duration-150"
-      >
-        <i class="fas fa-envelope text-[18px]"></i>
-        <span class="text-[15px] sm:text-[16px]">Email</span>
-      </a>
-    </div>
-  </div>
-</section>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/teslim-adekoya/" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
+            <i class="fab fa-linkedin-in text-[20px] sm:text-[24px]"></i>
+            <span class="text-[12px] sm:text-[14px] uppercase">LinkedIn</span>
+          </a>
 
+          <!-- Email -->
+          <a href="mailto:teslimadekoya1995@gmail.com" class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
+            <i class="fas fa-envelope text-[20px] sm:text-[24px]"></i>
+            <span class="text-[12px] sm:text-[14px] uppercase">Email</span>
+          </a>
+        </div>
 
-
-
-
-
-    
-<footer class="bg-black text-white">
-  <div class="max-w-[1440px] mx-auto px-6 sm:px-16 py-12 flex flex-col items-center gap-8">
-
-    <!-- Name / Signature -->
-    <h2 class="text-[16px] sm:text-[18px] font-normal abeezee uppercase tracking-widest text-center">
-      Teslim Adekoya Portfolio
-    </h2>
-
-    <!-- Links (Icons with labels) -->
-    <div class="flex gap-6 sm:gap-10 items-center justify-center">
-      <!-- Resume -->
-      <a href="/images/Teslim Adekoya - Product Designer.pdf" target="_blank" rel="noopener noreferrer"
-         class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
-        <i class="fas fa-file-alt text-[20px] sm:text-[24px]"></i>
-        <span class="text-[12px] sm:text-[14px] uppercase abeezee">Resumé</span>
-      </a>
-
-      <!-- LinkedIn -->
-      <a href="https://www.linkedin.com/in/teslim-adekoya/" target="_blank" rel="noopener noreferrer"
-         class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
-        <i class="fab fa-linkedin-in text-[20px] sm:text-[24px]"></i>
-        <span class="text-[12px] sm:text-[14px] uppercase abeezee">LinkedIn</span>
-      </a>
-
-      <!-- Email -->
-      <a href="mailto:teslimadekoya1995@gmail.com"
-         class="flex flex-col items-center gap-1 group text-[#FE5F55] hover:text-white transition duration-200">
-        <i class="fas fa-envelope text-[20px] sm:text-[24px]"></i>
-        <span class="text-[12px] sm:text-[14px] uppercase abeezee">Email</span>
-      </a>
-    </div>
-
-    <!-- Copyright -->
-    <p class="text-white/50 text-[12px] sm:text-[14px] font-light tracking-wide text-center mt-4">
-      © <script>document.write(new Date().getFullYear());</script> Teslim Adekoya. All Rights Reserved.
-    </p>
-  </div>
-</footer>
-
+        <!-- Copyright -->
+        <p class="text-white/50 text-[12px] sm:text-[14px] font-light tracking-wide text-center mt-4">
+          © <script>document.write(new Date().getFullYear());</script> Teslim Adekoya. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
 
   </div>
 
   <!-- Work Cards Script -->
   <script>
-const works = [
+    const works = [
+            {
+        title: "OMOWUNMI'S KITCHEN",
+        description: "Design & Research",
+        image: "/images/omowunmi_cover_img.webp",
+        link: "omowunmi.html"
+      },
+            {
+        title: "NORDWASH",
+        description: "Design, Research & Case Study",
+        image: "/images/nordwash_cover_img.webp",
+        link: "nordwash.html"
+      },
+            {
+        title: "TESLIM'S DESIGN SYSTEM",
+        description: "Variables, Components and UI elements.",
+        image: "/images/teslims_design_system_cover_img.webp",
+        link: "teslim_design_system.html"
+      },
+            {
+        title: "CLANNIT",
+        description: "Design Critique & Redesign",
+        image: "/images/clannit_img_cover.webp",
+        link: "clannit.html"
+      },
 
-    {
-    title: "TESLIM'S DESIGN SYSTEM",
-    subtitle: "",
-    description: "Responsive components, variables, and common UI elements.",
-    image: "/images/teslim_design_system_cover.png",
-    link: "https://www.figma.com/community/file/1536446595095612665" // 👉 External live site
-  },
-  {
-    title: "NORDWASH",
-    subtitle: "LAUNDRY APP",
-    description: "Design & Research",
-    image: "/images/nordwash_img_cover.webp",
-    link: "nordwash.html" // 👉 Case study page
-  },
-    {
-    title: "CLANNIT",
-    subtitle: "SECURITY APP",
-    description: "Design Critique & Redesign",
-    image: "/images/clannit_img_cover.webp",
-    link: "clannit.html" // 👉 Case study page
-  },
+      {
+        title: "NORTH CAFÉ",
+        description: "Frontend, Backend, Design & Research",
+        image: "/images/north_cafe_cover_img.webp",
+        link: "northcafe.html"
+      },
 
-  {
-    title: "NORTHCAFÉ",
-    subtitle: "FOOD APP",
-    description: "Frontend, Backend, Design & Research",
-    image: "images/north_cafe_img_cover.webp.webp",
-    link: "https://complete-northcafe-dm75.vercel.app/" // 👉 External live site
-  },
-
-
-];
-
+      
+    ];
 
     const container = document.getElementById("works-container");
 
-works.forEach(work => {
-  const card = document.createElement("div");
-  card.className = "relative group aspect-[16/9] overflow-hidden";
+    works.forEach(work => {
+      const card = document.createElement("div");
+      card.className = "block";
 
-  const isExternal = work.link.startsWith("http");
-  const targetAttr = isExternal ? 'target="_blank" rel="noopener noreferrer"' : '';
+      const isExternal = work.link.startsWith("http");
+      const targetAttr = isExternal ? 'target="_blank" rel="noopener noreferrer"' : '';
 
-  card.innerHTML = `
-    <a href="${work.link}" ${targetAttr} class="block w-full h-full">
-      <img src="${work.image}" alt="${work.title} ${work.subtitle}" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 cursor-pointer" />
-
-      <div class="absolute inset-0 bg-black/60 backdrop-blur-sm text-white flex flex-col justify-between p-4 sm:p-8 transition-opacity duration-300 opacity-100 sm:opacity-0 group-hover:opacity-100">
-        <div>
-          <h2 class="text-[24px] sm:text-[48px] font-normal abeezee leading-tight uppercase break-words">
-            ${work.title}<span class="sm:hidden"><br></span><span class="hidden sm:inline"> </span>${work.subtitle}
+      card.innerHTML = `
+        <a href="${work.link}" ${targetAttr} class="block">
+          <img src="${work.image}" alt="${work.title} ${work.subtitle}" class="w-full h-full object-cover" />
+        </a>
+        <div class="mt-4">
+          <h2 class="text-white font-normal text-[24px] sm:text-[32px] leading-tight uppercase">
+            ${work.title}
           </h2>
-          <p class="text-[13px] sm:text-[18px] text-white/70 mt-2">${work.description}</p>
+          <p class="text-white/70 font-normal text-[14px] sm:text-[16px] mt-2">${work.description}</p>
         </div>
-        <div class="mt-6">
-          <span class="inline-flex items-center gap-2 text-[13px] sm:text-[16px] text-[#FE5F55] hover:text-white transition-all duration-200 uppercase abeezee border border-[#FE5F55] hover:border-white px-4 py-2 rounded-full">
-            ${isExternal ? 'Visit Site' : 'View Work'}
-            <i class="fas fa-arrow-up-right-from-square text-[13px] sm:text-[16px]"></i>
-          </span>
-        </div>
-      </div>
-    </a>
-  `;
+      `;
 
-  container.appendChild(card);
-});
+      container.appendChild(card);
+    });
 
-      const worksSection = document.getElementById("works");
-  const worksLink = document.getElementById("worksLink");
+    // Works link active state
+    const worksSection = document.getElementById("works");
+    const worksLink = document.getElementById("worksLink");
 
-  function handleScroll() {
-    const sectionTop = worksSection.getBoundingClientRect().top;
-    const sectionHeight = worksSection.offsetHeight;
+    function handleScroll() {
+      const sectionTop = worksSection.getBoundingClientRect().top;
+      const sectionHeight = worksSection.offsetHeight;
 
-    if (sectionTop <= window.innerHeight / 2 && sectionTop + sectionHeight > 0) {
-      worksLink.classList.remove("text-white/60");
-      worksLink.classList.add("text-white");
-    } else {
-      worksLink.classList.remove("text-white");
-      worksLink.classList.add("text-white/60");
+      if (sectionTop <= window.innerHeight / 2 && sectionTop + sectionHeight > 0) {
+        worksLink.classList.remove("text-white/60");
+        worksLink.classList.add("text-white");
+      } else {
+        worksLink.classList.remove("text-white");
+        worksLink.classList.add("text-white/60");
+      }
     }
-  }
 
-  window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
   </script>
 </body>
 </html>

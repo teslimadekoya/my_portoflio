@@ -3,16 +3,29 @@
 
 
 body{
+
   max-width: 1440px;
+
   margin: 0 auto;
+
   align-items: center;
+
   box-sizing: border-box;
+
 }
 
+
+
 @layer utilities {
+
 .abeezee {
-  font-family: "ABeeZee", sans-serif;
+
+  font-family: "Inter", sans-serif;
+
 }
+
+
+
 
 
   }
